@@ -1,0 +1,138 @@
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state={
+      currentNumber: "0",
+      operatorFlag:false,
+      decimalFlag:false
+    } // end state
+  }//end constructor
+  
+  
+  
+  handleClick = (buttonName) => {
+    let currentNumber = this.state.currentNumber
+    let operatorFlag = this.state.operatorFlag
+    const  endsWithNegativeSign = /[x/+]‑$/
+    
+    switch(true) {
+        case buttonName === "0" ||
+         buttonName === "1" ||
+         buttonName === "2" ||
+         buttonName === "3" ||
+         buttonName === "4" ||
+         buttonName === "5" || 
+         buttonName === "6" ||
+         buttonName === "7" ||
+         buttonName === "8" ||
+         buttonName === "9" :
+        
+        if(this.state.currentNumber!=="0") { //adds num to screen, removing zero if it is the first num
+        
+        currentNumber += buttonName
+        operatorFlag = false  //sets operator flag to false so you can continue to add numbers and operators
+          
+        }else{
+          currentNumber = buttonName
+        } 
+        
+        
+        break
+        case buttonName === "+" ||
+             buttonName === "-" ||
+             buttonName === "*" ||
+             buttonName === "/" :
+        if(!this.state.operatorFlag){//allows you to append operator
+          currentNumber += buttonName
+          operatorFlag = true
+          this.setState({decimalFlag:false})
+          
+        }
+              
+        
+          
+        else{//allows you to switch operator
+  const newNumber = currentNumber.slice(0,currentNumber.length-1)
+          currentNumber = newNumber
+          currentNumber += buttonName
+}
+      break
+      case buttonName ==="C":
+         currentNumber = "0"
+         operatorFlag =  false
+        this.setState({decimalFlag:false})
+      break
+      case buttonName === "=":
+        currentNumber = eval(currentNumber)
+        operatorFlag = false
+        this.setState({decimalFlag:true})
+      break
+      case buttonName === ".":
+        if(!this.state.decimalFlag){
+          currentNumber += "."
+          this.setState({decimalFlag:true})
+        }
+        
+        
+    }
+    this.setState({currentNumber})
+    this.setState({operatorFlag})
+  }
+  
+  render() {
+    return(
+      <div id="container">
+        <div id="calcGrid">
+        <Screen id="display" currentNumber={this.state.currentNumber} />
+        <Button id="zero" name="0" handleClick={this.handleClick} />
+        <Button id="one" name="1" handleClick={this.handleClick} />
+        <Button id="two" name="2" handleClick={this.handleClick} />
+        <Button id="three" name="3" handleClick={this.handleClick} />
+        <Button id="four" name="4" handleClick={this.handleClick} />
+        <Button id="five" name="5" handleClick={this.handleClick} />
+        <Button id="six" name="6" handleClick={this.handleClick} />
+        <Button id="seven" name="7" handleClick={this.handleClick} />
+        <Button id="eight" name="8" handleClick={this.handleClick} />
+        <Button id="nine" name="9" handleClick={this.handleClick} />
+        <Button id="clear" name="C" handleClick={this.handleClick} />
+        <Button id="equals" name="=" handleClick={this.handleClick} />
+        <Button id="decimal" name="." handleClick={this.handleClick} />
+        <Button id="add" name="+" handleClick={this.handleClick} />
+        <Button id="subtract" name="-" handleClick={this.handleClick} />
+        <Button id="multiply" name="*" handleClick={this.handleClick} />
+        <Button id="divide" name="/" handleClick={this.handleClick} />
+        </div>  
+      </div>
+    );//end return
+  }//end render
+}//end App
+
+
+
+class Screen extends React.Component{
+  render() {
+    return(
+      <div id={this.props.id}>
+        {this.props.currentNumber}
+      </div>
+    )//return end
+}//render end
+}//Screen End
+
+class Button extends React.Component {
+  runParentHandleClick= () => {
+    this.props.handleClick(this.props.name)
+  }
+  
+  render() {
+    return (
+    <button id={this.props.id} onClick={this.runParentHandleClick} classNmae="button">{this.props.name} </button>
+    
+    )
+  }
+}
+
+
+
+
+ReactDOM.render(<App />, document.getElementById('root'));
