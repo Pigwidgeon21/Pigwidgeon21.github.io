@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+body {
+  background-color: #252323;
+}
+
+
+#drum-machine {
+  background-color: #252323;
+  border-radius: 10px;
+ font-family: Ubuntu;
+  margin: auto;  
+  justify-content: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  ;
+}
+.container {
+  grid-column:2;
+  
+}
+
+
+h1 {
+  border-style: solid;
+  border-color:black;
+  border-width: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: rgb(0,2,10);
+background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(106,4,4,1) 100%);
+  height: 50px; 
+  
+  text-align: center;
+  vertical-align: center;
+  color: #b0a7a7;
+  
+}
+
+
+#display {
+  border-style: solid;
+  border-color:black;
+  border-width: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: rgb(0,2,10);
+background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(106,4,4,1) 100%);
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+  
+  font-size: 40px;
+  color: #b0a7a7;
+}
+
+#drum-pads {
+  
+  font-family: Ubuntu;
+  margin: 1em;
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border-style: solid;
+  margin: 8px 8px;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 50%;
+  padding: 1em;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: rgb(0,2,10);
+background: radial-gradient(circle, rgba(0,2,10,1) 0%, rgba(106,4,4,1) 100%);
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.24),
+    5px 5px 5px 0px rgba(110, 106, 106, 0.24),
+    5px 5px 5px 0px rgba(0, 0, 0, 0.22);
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.drum-pad:hover,
+.drum-pad:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.drum-pad:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.drum-pad::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: currentColor;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.drum-pad:hover::before {
+  opacity: 0.12;
+}
+
+.drum-pad::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: currentColor;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+.drum-pad:focus::after {
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+.drum-pad:disabled::after {
+  opacity: 0;
+}
