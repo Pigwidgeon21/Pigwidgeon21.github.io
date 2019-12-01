@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=League+Script&display=swap');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/* ----General--- */
+
+
+* {
+  box-sizing: border-box;
+  
+
+}
+  .html{
+  overflow:scroll;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+::-webkit-scrollbar{
+  width:0px;
+  background:transparent;
+}
+  
+
+body{
+  color: #090b08;
+  margin:  0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: #ffe9ef;
+}
+
+h1{
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+h2{
+  text-transform: uppercase;
+}
+h4{
+  font-size: .8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h6{
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+  color: white;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+ul{
+  list-style: none;
+}
+
+section{
+  padding: 5.8em 2em 0;
+}
+.title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+.btn{
+  display: inline-block;
+  background-color:#ffe6cc;
+  padding: .5em 1.5em;
+  border: solid 1px gray; 
+ color:black;
+  border-radius:1em;
+  transition: all .3s ease-in;
+}
+.btn:hover, .btn:focus{
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  transition: all .3s ease-out; 
+}
+
+
+/* ----Header----- */
+
+header{
+  display: fixed;
+  position: fixed;
+  width: 100%;
+  height:100px;
+  
+  justify-content:center;
+  z-index: 1;
+}
+header:before{
+  content: "";
+  position: absolute;
+  background-color:rgb(255, 153, 0,.1);
+  width: 100%;
+  height: 68%;
+  z-index: -1;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+}
+  
+ /* ---nav bar---- */ 
+  
+.name{ 
+float: left;
+background-color:;
+}
+.options{
+  float:right;
+}
+
+
+.nav-link{
+  display: inline-block;
+  
+  background-color:rgb(255, 153, 0,.3);
+  padding: .5em 1.5em;
+  border: solid 1px gray; 
+ color:black;
+  border-radius: 1em;
+  transition: all .3s ease-in;
+}
+.nav-link:hover, .nav-link:focus{
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.75);
+  transition: all .3s ease-out; 
+}
+
+
+
+
+.navbar{  
+  
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffe9ef;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: -2;
+}
+
+
+/* Hero Section */
+.hero {
+	
+  /* sizing */
+  width:100vw;
+	height: 100vh;
+  display: flex;
+  
+  /* flex */	
+  justify-content:center;
+  align-items: center;
+  text-align:center;
+  overflow: hidden;
+  
+  /* background */
+	background-image:url(http://quartzandcloud.com/wp-content/uploads/2016/02/michael-chase-clouds-1-2.jpg) ;
+;     
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.hero-inner {
+  background-color:
+  padding: 1.0em;
+  width: 45.0em;
+  margin: 1.0em 0;
+  
+}
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+  font-family:'Cedarville Cursive', cursive;
+    color:white;
+  text-transform: none;
+  
+  text-shadow: #000 1px 1px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+   
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+.hero h2 {
+    /* Text styles */
+    font-size: 1.3em;
+    color:white;
+  
+  font-weight:50;
+  text-shadow: #000 1px 1px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+.hero .btn{
+  background-color:transparent;
+    color:white;
+  font-weight:50;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+  
+}
+  /* ---Hero End--- */
+
+
+
+html, body, .Container
+{
+    height: 100%;
+}
+.container {  
+    display: grid;  
+    grid-template-columns:repeat(2,1fr);  
+    grid-template-rows: repeat(3,1fr);  
+  width: 100vw;
+  height: 100vh;
+}
+
+    .Container:before
+    {
+        content: '';
+        height: 100%;
+        float: left;
+    }
+
+
+.Content
+{
+    position: relative;
+    
+}
+    .Content:after
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.Wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+    .Wrapper  div
+    {
+        height: 100%;
+    }
+
+ .LeftContent
+{
+  float:left;
+  position:sticky;
+  width:50%;
+  
+  background-image:  url(https://theluxuryspot.com/wp-content/uploads/2013/06/tumblr_mnuof7IIax1qh4vdzo1_1280.jpg) ;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  
+  padding:150px;
+   justify-content:center;
+  align-items: center;
+  text-align:center; 
+ 
+}
+
+.RightContent
+{
+    
+    float: right;
+    overflow:auto;
+  width:50%;
+  
+  overflow-x: hidden !important;
+  text-align:center;
+  
+  
+ background-image:  url(https://image.freepik.com/free-photo/four-pastel-color-cloud-sky-background-with-pastel-color_40163-14.jpg) ;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+.LeftContent h1 {
+  text-transform:none;
+  font-size: 5em;
+  font-family:'Cedarville Cursive', cursive;
+    color:white; 
+  
+  text-shadow: #000 1px 1px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+  
+}
+
+/* ---about section--- */
+
+.avatar {
+  background-image: url("https://bloximages.chicago2.vip.townnews.com/pressofatlanticcity.com/content/tncms/assets/v3/editorial/7/8b/78b1d3fc-2af5-56b8-a34d-451caa0792de/58bdf8fad7449.image.jpg");
+  border-radius:50%;
+  width:20em;
+  height:20em;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  
+  padding:150px;
+   justify-content:center;
+  align-items: center;;
+  
+  margin-top:5em;
+  display:inline-block;
+  border:solid rgb(255, 153, 0,.3);
+  
+}
+
+
+
+
+
+
+
+
+/* Slow-motion Zoom Container */
+
+
+
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 65%;
+  transition: transform 70s, filter 20s ease-in-out;
+  filter: brightness(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(100%);
+  transform: scale(3);
+}
+
+
+
+
+hovertext {
+    position: relative;
+  display:block;
+    width:500px;
+    text-decoration: none !important;
+    text-align: center;
+  }
+hovertext:hover::after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 20px;
+    width: 460px;
+    background: rgba(0,0,0,0.8);
+    text-decoration: none !important;
+    color: #fff;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+  }
+  hovertext:hover::after, hovertext:focus::after {
+    opacity: 1.0;
+  }
+
+
+.contact-wrapper{
+  justify-content:center;
+    text-align:center;
+}
+
+/* ---Menu--- */
+
+.toggle-menu{
+  display: block;
+  font-size: 1.2em;
+  align-self: center;
+  cursor: pointer;
+}
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"]:hover ~ .toggle-menu,
+input[type="checkbox"]:checked ~ .toggle-menu
+{
+  border-bottom: solid 1px #090b08;
+}
+input[type="checkbox"]:checked ~ .navbar{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 4em 0 0;
+}
+
+}
+.social-menu{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+.social-menu li a{
+  margin: 0 .5em;
+  padding: .5em;
+}
+.social-menu li a{
+  font-size: 1.2em;
+}
+.social-menu li a:hover,
+.social-menu li a:active,
+.social-menu li a:focus
+{
+  border-bottom: solid 1px #000;
+}
+ 
+
+/* -- menu end-- */
+
+/* ---Contact--- */
+
+.contact-wrapper:after{
+  display: block;
+  content: "";
+  margin: 2em auto;
+  border-bottom: solid 1px #dadada;
+}
+
+
+.contact-wrapper .wrapper{
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.contact-wrapper .social-menu{
+  
+  justify-content: center;
+}
+.contact-wrapper .social-menu li a {
+	font-size: 1.5em;
+  padding: 0;
+  margin: 0 1.5em 0 0;
+}
+.contact-wrapper a i{
+  width: 100%;
+  padding-bottom: .2em;
+}
+
+
+
+/* ---Contact end--- */
+
+
+/* --Responsive-- */
+
+@media(min-width: 576px){
+  /*  Global  */
+  h1{
+    font-size: 2em;
+  }
+  
+  /*  Hero Section  */
+  
+  .hero-img{
+    padding-top: 6.5em;
+  }
+  .hero-img img{
+    display: block;
+    width: 14em;
+    height: auto;
+  }
+  .hero-text{
+    padding: 0 2em;
+  }
+  
+  
+  @media(min-width: 768px){
+  /*  Global  */
+  .wrapper{
+    display: flex;
+  }
+  
+  /*  Header  */
+  .nav-brand img{
+    height: 10em;
+  }
+  .toggle-menu{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    z-index: 1;
+  }
+  .menu{
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  
+  
+  
+  
+ 
+  
+  /* Contact Section  */
+  #contact .wrapper{
+    flex-wrap: wrap;
+  }
+    
+    .form-wrapper, .contact-wrapper{
+    flex: 1 0 50%;
+    align-self: center;
+    padding: 0 1em;
+  }
+  .copy-wrapper{
+    flex: 1 0 100%;
+    padding: 0 1em;
+  }
+  .form-wrapper:after,
+  .contact-wrapper:after{
+    display: none;
+  }
+  .contact-footer{
+    border: 0;
+    padding: 0;
+    margin: .6em auto;
+    text-align: left;
+  }
+  .contact-footer:hover{
+    background-color: transparent;
+  }
+  .contact-wrapper a.contact-footer:hover i{
+    
+  }
+  .contact-wrapper a i{
+    width: auto;
+    padding-right: 1em;
+  }
+  .contact-wrapper .social-menu{
+    display: flex;
+    order: 3;
+    justify-content: flex-start;
+  }
+  .contact-wrapper .social-menu a i{
+    padding-right: 0;
+  }
+  .copy-wrapper:before{
+    display: block;
+    content: "";
+    margin: 2em auto;
+    border-bottom: solid 1px #dadada;
+  }
+}
