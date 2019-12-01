@@ -1,0 +1,77 @@
+const initialMarkdown = `
+# Favorite Animals
+
+## Cats
+### Kittens
+#### All the above
+
+~~WOOF~~
+**_MEOW_**
+
+> Cats Rule!Dogs Drool!
+
+### Reasons why cats are awesome:
+- They are playful.
+- Good Hunters.
+- Self sufficient.
+- They Meow *and* purr.
+- They come in many sizes and colors.
+
+[Cats](https://en.wikipedia.org/wiki/Kitten Find more Cat info here!")
+[Google](https://google.com "And here!")
+
+An example of of inline code, \`<div id= "cats"></div>\`, about cats.
+
+A code block that alerts a special message about cats:
+
+\`\`\`
+function test() {
+  console.log("Adopt a cat today!");
+}
+\`\`\`
+
+
+
+
+![Cat Photo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaIctHIjv1tVOMrJFkxzrWdszlxI4U-5RURxtDlqW-1Eu2_sN)
+
+
+
+`
+marked.setOptions({
+  highlight: function(code){
+    return hljs.highlightAuto(code).value
+  },
+  breaks: true
+})
+
+class App extends React.Component {
+  constructor(props) {
+    super(props) 
+    this.state = {
+     markdown: initialMarkdown
+    }
+   // this.handleChange = //this.handleChange.bind(this)
+  }
+  
+  handleChange = e => this.setState({ markdown: e.target.value})
+  
+  render() {
+    return (
+      <div>
+        <header> <h1>Markdown Previewer</h1></header>
+        <div className = "container">
+          <div className = 'left'>
+            <textarea id="editor" value={this.state.markdown} onChange={this.handleChange}/>
+          </div>
+          <div className = 'right'>
+            
+            <div id="preview" dangerouslySetInnerHTML={{__html:marked(this.state.markdown)}}  />
+          </div>
+        </div>
+        </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("root"))
