@@ -1,0 +1,298 @@
+
+   <h1 id="title"> Adopt a Cat!</h1>
+  <div id="form-outer">
+     <p id="description"> Let us help you find the purrfect match!</p>  
+    <form id="survey-form" action="/my-handling-form-page" method="post"
+         
+ 
+          
+        <!-- -----Contact Info------ -->   
+ <fieldset>
+   <legend>Contact Information </legend>
+   
+     <div class="rowTab">
+       <div class="labels">
+     <label id="name-label" for="name">Name:</label>
+   </div>
+     
+     <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
+       </div>
+   </div>
+
+  <div class="rowTab">
+    <div class="labels">
+  <label id="address-label">Address:</label>
+    </div>
+    <div class="rightTab">
+  <input type="address"  name="address" id="address" class="input-field" placeholder="Enter Address Here" required></div>
+   </div>
+   
+    <div class="rowTab">
+      <div class="labels">
+   <label id="email-label" for="email">Email:</label>
+     </div>
+    <div class="rightTab">
+  <input type="email" name="email" id="email" class="input-field" required placeholder="Enter Email Here">   
+   </div>
+   </div>
+   
+    
+      <div class="rowTab">
+        <div class="labels">
+        <label id="number-label" for="phone">Phone Number:</label></div>
+      <div class="rightTab">
+      <input type="number" id="number" name="number" class="input-field" placeholder="Enter Phone Number" min="" max="9">
+        
+        </div>
+   </div>
+   
+     <div class="rowTab">
+       <div class="labels">
+     <label id="number-label" for="age">Age:</label>
+     </div>
+     <div class="rightTab">
+     <input type="number" name="age" id="number" min="1" max="115" class="input-field" placeholder="Age"
+     </div>       
+     </div>
+    </fieldset>
+   
+<!-- ------------Radio Button------------- -->
+    <fieldset>
+       <legend>Preferences</legend>
+      
+      
+        <div class="rowTab"> 
+          <div class="labels">
+      <label for="gender">Gender</label>
+        </div>
+        <div class="rightTab">
+      <input type="radio" name="gender" value="female" >Female<br>
+      <input type="radio"name="gender" value="male">Male<br>
+      <input type="radio" name="gender" value="both">Any
+      
+      </div>
+          <br>
+          <br>
+      
+        <div class="rowTab">
+          <div class="labels">
+      <label for="Age">Age</label>
+        </div>
+      
+        <div class="rightTab">
+        <input type="radio" name="age" value="kitten">Kitten<br>
+        <input type="radio" name="age" value="adult">Adult<br>
+        <input type="radio" name="age" value="Senior">Senior<br> 
+        <input type="radio" name="age" value="any">Any      
+      </div>
+          <br>
+          <br>
+      
+        <div class="rowTab">
+          <div class="labels">
+          <label for="hair">Hair</label></div>
+        
+          <div class="rightTab">
+          <input type="radio" name="hair" value="long">Long<br>
+          <input type="radio" name="hair" value="medium">Medium<br>
+          <input type="radio" name="hair" value="short">Short<br>
+          <input type="radio" name="hair" value="any">Any
+        
+      </div>
+          <br>
+   </div>
+   
+   <!-- ------------Drop Down------------  -->
+ <div class="rowTab">
+   <div class="labels">
+   <label for="color">Color:</label>
+</div>  
+
+   <div class="rightTab">
+  <select id="dropdown" name="color" class="dropdown">
+    <option value="any">Any</option>  
+    <option value="brown">Brown</option>
+    <option value="tabby">Brown Tabby</option>
+    <option value="black">Black</option>
+    <option value="tabby">Brown Tabby</option>
+    <option value="calico">Calico</option>
+    <option value="cream">Cream</option>
+    <option value="gray">Silver Tabby</option>
+    <option value="gray">Gray-Blue</option>
+    <option value="orange">Orange Tabby</option>
+    <option value="orange">Orange</option>
+    <option value="spotted">Spotted Tabby</option>
+    <option value="tan">Tan Tabby</option>
+    <option value="tabby">Tabby</option>
+    <option value="tiger">Tiger Striped</option>
+    <option value="tortoiseshell">Tortoiseshell</option>
+      <option value="tuxedo">Tuxedo</option>
+    <option value="white">White</option>
+     </select>
+        </div> 
+</div>
+    
+            
+    <div class="rowTab">
+      <div class="labels">
+      <label for="breed">Breed:</label>
+        </div>
+  <div class="rightTab">
+    <select id="breed" name="breed" class="dropdown">
+  
+    <option value="any">Any</option>
+    <option value="abyssinian">Abyssinian</option>
+    <option value="aegean">Aegean</option>
+    <option value="American-Curl">American Curl</option>
+    <option value="American-Bobtail">American Bobtail</option>
+    <option value="American-Shorthair">American Shorthair</option>
+    <option value="American-Wirehair">American Wirehair</option>
+    <option value= "Aphrodite-Giant">Aphrodite Giant</option>        
+    <option value="Arabian-Mau">Arabian Mau</option>
+    <option value="Australian-Mist">Australian Mist</option>
+    <option value="Asian">Asian</option>
+    <option value="Asian-Semi-longhair">Asian Semi-longhair</option>
+    <option value="Balinese">Balinese</option>
+    <option value="Bambino">Bambino</option>
+    <option value="Bengal">Bengal</option>
+    <option value="Birman">Birman</option>
+    <option value="Bombay">Bombay</option>
+    <option value="Brazilian-Shorthair">Brazilian Shorthair</option>
+    <option value="British-Semi-longhair">British Semi-longhair</option>
+    <option value="British-Shorthair">British Shorthair</option>
+    <option value="Burmese">Burmese</option>
+    <option value="Burmilla">Burmilla</option>
+    <option value="California-Spangled">California Spangled</option>
+    <option value="Chantilly-Tiffany">Chantilly-Tiffany</option>
+    <option value="Chartreux">Chartreux</option>
+    <option value="Chausie">Chausie</option>
+    <option value="Cheetoh">Cheetoh</option>
+    <option value="Colorpoint-Shorthair">Colorpoint Shorthair</option>
+    <option value="Cornish-Rex">Cornish Rex</option>
+    <option value="Cymric">Cymric</option>
+    <option value="Cyprus">Cyprus</option>
+    <option value="Devon-Rex">Devon Rex</option>
+    <option value="Donskoy">Donskoy</option>
+    <option value="Dragon-Li">Dragon Li</option>
+    <option value="Dwelf">Dwelf</option>
+    <option value="Egyptian-Mau">Egyptian Mau</option>
+    <option value="European-Shorthair">European Shorthair</option>
+    <option value="Exotic-Shorthair">Exotic Shorthair</option>
+    <option value="Foldex">Foldex</option>
+    <option value="German-Rex">German Rex</option>
+    <option value="Havana-Brown">Havana Brown</option>
+    <option value="Highlander">Highlander</option>
+    <option value="Himalayan">Himalayan</option>
+    <option value="Japanese-Bobtail">Japanese Bobtail</option>
+    <option value="Javanese">Javanese</option>
+    <option value="Karelian-Bobtail">Karelian Bobtail</option>
+    <option value="Khao-Manee">Khao Manee</option>
+    <option value="Korat">Korat</option>
+    <option value="Korean-Bobtail">Korean Bobtail</option>
+    <option value="Korn-Ja">Korn Ja</option>
+    <option value="Kurilian-Bobtail">Kurilian Bobtail</option>
+    <option value="LaPerm">LaPerm</option>
+    <option value="Lykoi">Lykoi</option>
+    <option value="Maine-Coon">Maine Coon</option>
+    <option value="Manx">Manx</option>
+    <option value="Mekong-Bobtail">Mekong Bobtail</option>
+    <option value="Minskin">Minskin</option>
+    <option value="Munchkin">Munchkin</option>
+    <option value="Nebelung">Nebelung</option>
+    <option value="Napoleon">Napoleon</option>
+    <option value="Norwegian-Forest-Cat">Norwegian Forest Cat</option>
+    <option value="Ocicat">Ocicat</option>
+    <option value="Ojos-Azules">Ojos Azules</option>
+    <option value="Oregon-Rex">Oregon Rex</option>
+    <option value="Oriental-Bicolor">Oriental Bicolor</option>
+    <option value="Oriental-Shorthair">Oriental Shorthair</option>
+    <option value="Oriental-Longhair">Oriental Longhair</option>
+    <option value="Persian">Persian</option>
+    <option value="Peterbald">Peterbald</option>
+    <option value="Pixie-bob">Pixie-bob</option>
+    <option value="Raas">Raas</option>
+    <option value="Ragamuffin">Ragamuffin</option>
+    <option value="Ragdoll">Ragdoll</option>
+    <option value="Russian-Blue">Russian Blue</option>
+    <option value="Russian-White-Black-Tabby">Russian White, Black, and Tabby</option>
+    <option value="Sam-Sawet">Sam Sawet</option>
+    <option value="Savannah">Savannah</option>
+    <option value="Scottish-Fold">Scottish Fold</option>
+    <option value="Selkirk-Rex">Selkirk Rex</option>
+    <option value="Serengeti">Serengeti</option>
+    <option value="Serrade-petit">Serrade petit</option>
+    <option value="Siamese">Siamese</option>
+    <option value="Siberian">Siberian</option>
+    <option value="Singapura">Singapura</option>
+    <option value="Snowshoe">Snowshoe</option>
+    <option value="Sokoke">Sokoke</option>
+    <option value="Somali">Somali</option>
+    <option value="Sphynx">Sphynx</option>
+    <option value="Suphalak">Suphalak</option>
+    <option value="Thai">Thai</option>
+    <option value="Thai Lilac">Thai Lilac</option>
+    <option value="Tonkinese">Tonkinese</option>
+    <option value="Toyger">Toyger</option>
+    <option value="Turkish-Angora">Turkish Angora</option>
+    <option value="Turkish-Van">Turkish Van</option>
+    <option value="Ukrainian-Levkoy">Ukrainian Levkoy</option>
+    <option value="Wila-Krungthep">Wila Krungthep</option>
+    <option value="York-Chocolate">York Chocolate</option>
+  </select>  
+      </div>
+     </div>
+   </fieldset>
+   <!-- ----------checkboxes------- -->
+   
+   <fieldset>
+     <legend>Personality</legend>
+     
+     
+     <div class="rowTab">
+       <div class="labels">
+       <label for="Personality">Check All That Apply</label></div>
+     
+       
+       <div class="rightTab">
+         
+     <input type="checkbox" name="curious" value="curious">Curious</br>
+   <input type="checkbox" name="shy" value="shy">Shy<br>
+   <input type="checkbox" name="cuddle-bug" value="cuddle-bug">Cuddle Bug<br>
+   <input type="checkbox" name="vocal" value="vocal">Vocal<br>
+   <input type="checkbox" name="king" value="king">King of the Castle<br>
+   <input type="checkbox" name="special" value="special">Special Needs<br>
+   <input type="checkbox" name="kid-friendly" value="kid-friendly">Kid Friendly<br>
+   <input type="checkbox" name="pet-friendly" value="pet-friendly">Good With Pets<br>
+   <input type="checkbox" name="energetic" value="energetic">Energetic<br>
+  <input type="checkbox" name="training" value="training">Requires Training
+   </div>
+   </div>
+      
+    </fieldset>
+  
+  <!-- -------text--------- -->
+ 
+ <fieldset>
+   <legend>Additional Information</legend>
+   <div class="rowTab">
+     <div class="labels">
+     <label for="msg">Further Details:</label>
+       
+     </div>
+   <div class="rightTab">
+   <textarea id="msg" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter further details here"></textarea>
+     </div>
+   </div>
+  <button id="submitbutton" type="submit">Find Your Match</button> 
+   <br>
+     </fieldset>
+      <br>
+   <div class="footer">Made by <a href="https://codepen.io/Pigwidgeon21/">Pigwidgeon21</a></div>       
+
+</form>
+   
+  </div>
+   
+   
+          
