@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-LightItalic.otf');
+}
+@font-face {
+	font-family: 'Bellota-BoldItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+
+form {
+    text-align: center;
+}
+body {
+ margin: 0;
+ padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fa9f28;
+}
+
+.wrapper {
+    background-image: url("../images/backgrounds/mountains.jpg"); 
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    width: 100%;
+	height: 100%;
+	min-width: 950px;
+    
+    
+}
+
+.login_box {
+	font-family: 'Bellota-LightItalic', sans-serif;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	top: 7%;
+	width: 35%; 
+	background-color: #ffffff;
+	border: 1px solid #EDEDED;
+	border-radius: 7px;
+	padding: 5px;
+    opacity: 0.98;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+}
+
+.login_header {
+	font-family: 'Bellota-LightItalic', sans-serif;
+	width: 100%;
+    height: 90px;  
+    margin-bottom: .5em;  
+	background-color: #fa9f28;
+	color: #fff;
+	text-align: center;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+}
+
+.login_header h1 {
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #fff;
+	text-shadow: rgb(215, 226, 115) 0.5px 0.5px 0px;
+	font-size: 250%;
+
+	
+}
+
+input[type="submit"] {
+	background-color: #fa9f28;
+	border: 1px solid #fa9f28;
+	border-radius: 3px;
+	margin: 5px 0 10px 0;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	font-size: 100%;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus{
+    cursor:pointer;
+    background-color: #fa7900;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    transition: .5s ease;
+  }
+
+input[type="text"], input[type="email"], input[type="password"] {
+	border: 1px solid #e5e5e5;
+	margin-top: 5px;
+	width: 70%;
+	height: 35px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+	border-color: #fa9f28;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+	outline-color:#fae18f;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ffc87b;
+}
+
+#second {
+	display: none;
+}
+
+
+
+
+
+
